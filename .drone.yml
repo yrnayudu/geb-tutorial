@@ -1,0 +1,12 @@
+workspace:
+  base: /geb-tutorial
+pipeline:
+  test:
+    image: quay.io/ukhomeofficedigital/openjdk8:latest
+    environment:
+      - GRADLE_USER_HOME=~/.gradle
+    commands:
+      - ./gradlew clean test
+services:
+  selenium:
+    image: selenium/standalone-chrome
