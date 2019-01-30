@@ -1,6 +1,6 @@
 .idea
 build
 .gradle
-platform-testsuite.iml
+geb-tutorial.iml
 out
 .env
